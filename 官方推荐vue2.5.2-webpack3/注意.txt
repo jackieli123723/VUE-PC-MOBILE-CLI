@@ -1,0 +1,36 @@
+注意配置
+运行的时候是
+
+"vue": "^2.5.2",
+    "vue-router": "^3.0.1"
+    webpack 3.8.1
+    
+    但是chalk没生效不知道啥原因
+    可以加上打包进度
+    这个没有加test 
+    可参考上面的修改（根目录的个）
+
+$ npm run build
+
+> vue-cli-webpack3@1.0.0 build E:\jackieli\node-code-write-练习\npm模块\vue-cli-webpack2\my-project
+> node build/build.js
+
+Hash: f388cb91c761763469f1
+Version: webpack 3.8.1
+Time: 5341ms
+                                                  Asset       Size  Chunks             Chunk Names
+               static/js/vendor.28ca1997a8fc968d15e9.js     120 kB       0  [emitted]  vendor
+                  static/js/app.44c162cdf00f9a5aa768.js    11.5 kB       1  [emitted]  app
+             static/js/manifest.9ada667b44f67ef19388.js    1.51 kB       2  [emitted]  manifest
+    static/css/app.97d513b985831e73244e4a5259df9dc0.css  432 bytes       1  [emitted]  app
+static/css/app.97d513b985831e73244e4a5259df9dc0.css.map  828 bytes          [emitted]
+           static/js/vendor.28ca1997a8fc968d15e9.js.map     972 kB       0  [emitted]  vendor
+              static/js/app.44c162cdf00f9a5aa768.js.map    38.5 kB       1  [emitted]  app
+         static/js/manifest.9ada667b44f67ef19388.js.map    14.4 kB       2  [emitted]  manifest
+                                             index.html  518 bytes          [emitted]
+
+  Build complete.
+
+  Tip: built files are meant to be served over an HTTP server.
+  Opening index.html over file:// won't work.
+
