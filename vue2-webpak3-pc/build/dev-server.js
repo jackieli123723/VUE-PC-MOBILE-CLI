@@ -26,12 +26,23 @@ const proxyTable = config.dev.proxyTable
 const app = express()
 const compiler = webpack(webpackConfig)
 
+
 const devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,
-  //quiet: true,
+   //不需要stats开启注释
+  // quiet: true,
   stats: {
-    colors: true,
-    chunks: false
+    //webpack1.x-2.x
+    // colors: true,
+    // chunks: false
+
+    //webpack3.x
+        colors: true,
+        hash: false,
+        timings: true,
+        chunks: false,
+        chunkModules: false,
+        modules: false
   }
 })
 
